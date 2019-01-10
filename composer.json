@@ -1,0 +1,43 @@
+{
+    "name": "almosoft/widgetmanager",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/almosoft/widgetmanager",
+    "keywords": ["Laravel", "widgetmanager"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "almosoft\\widgetmanager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "almosoft\\widgetmanager\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "almosoft\\widgetmanager\\widgetmanagerServiceProvider"
+            ],
+            "aliases": {
+                "widgetmanager": "almosoft\\widgetmanager\\Facades\\widgetmanager"
+            }
+        }
+    }
+}
