@@ -16,7 +16,7 @@ class widgetmanagerServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'almosoft');
        
         $this->loadViewsFrom(__DIR__.'/resources/views', 'almosoft');
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
 
         
