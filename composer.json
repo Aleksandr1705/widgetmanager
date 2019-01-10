@@ -1,11 +1,11 @@
 {
     "name": "almosoft/widgetmanager",
-    "description": ":description",
+    "description": ":Widget manager for backpackforlaravel",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Aleksander",
+            "email": "register1705@yandex.ru",
+            "homepage": "https://github.com/Aleksandr1705/widgetmanager"
         }
     ],
     "homepage": "https://github.com/almosoft/widgetmanager",
