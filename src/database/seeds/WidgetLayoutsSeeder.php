@@ -1,4 +1,6 @@
 <?php
+namespace almosoft\widgetmanager\database\seeds;
+
 use Illuminate\Database\Seeder;
 
 class WidgetLayoutsSeeder extends Seeder

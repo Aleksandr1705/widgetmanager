@@ -21,7 +21,8 @@
     },
     "autoload": {
         "psr-4": {
-            "almosoft\\widgetmanager\\": "src/"
+            "almosoft\\widgetmanager\\": "src/",
+            "almosoft\\widgetmanager\\Database\\Seeds\\":"src/database/seeds/"
         }
     },
     "autoload-dev": {
