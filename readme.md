@@ -19,9 +19,17 @@ $ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayout
 
 ## Usage
 
-Add to your view
+Add to your dashboard view:
 ``` bash
 {!! widgetmanager::GetWidgetBoard() !!}
+```
+Add to menus to sidebar:
+``` bash
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-tag'></i> <span>Widgets</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetlayout') }}'><i class='fa fa-tag'></i> <span>Widget Layouts</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-tag'></i> <span>Dashboard</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-tag'></i> <span>Dashboard-widgets</span></a></li>"
+
 ```
 
 ## Change log
