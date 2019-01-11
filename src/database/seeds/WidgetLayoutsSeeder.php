@@ -41,9 +41,8 @@ class WidgetLayoutsSeeder extends Seeder
             ],[
                 'name' => 'Layout 6_6',
                 'fname'=>'layout_6_6'
-            ],
-            [
-                    'name' => 'Layout 12',
+            ],[
+                'name' => 'Layout 12',
                 'fname'=>'layout_12'
             ], 
         ]);
