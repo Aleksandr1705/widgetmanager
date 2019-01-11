@@ -1,4 +1,3 @@
-l
 <div class="row">
     <div class="col-md-12">
       @foreach($widgetboard->widgets as $widget)
