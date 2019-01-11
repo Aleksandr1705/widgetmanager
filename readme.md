@@ -27,7 +27,7 @@ Add to menus to sidebar:
 ``` bash
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-tag'></i> <span>Widgets</span></a></li>"
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetlayout') }}'><i class='fa fa-tag'></i> <span>Widget Layouts</span></a></li>"
-php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-tag'></i> <span>Dashboard</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-tag'></i> <span>Dashboards</span></a></li>"
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-tag'></i> <span>Dashboard-widgets</span></a></li>"
 
 ```
