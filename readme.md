@@ -19,6 +19,11 @@ $ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayout
 
 ## Usage
 
+Add to your view
+``` bash
+{!! widgetmanager::GetWidgetBoard() !!}
+```
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
