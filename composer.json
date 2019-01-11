@@ -1,6 +1,7 @@
 {
     "name": "almosoft/widgetmanager",
     "description": ":Widget manager for backpackforlaravel",
+    "version":"1.0.0",
     "authors": [
         {
             "name": "Aleksander",
