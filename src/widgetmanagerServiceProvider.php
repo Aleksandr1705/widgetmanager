@@ -64,11 +64,10 @@ class widgetmanagerServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/widgetmanager.php' => config_path('widgetmanager.php'),
         ], 'widgetmanager.config');
-         $this->publishes([
-            __DIR__.'/../database/seeds' => base_path('database/seeds'),
-        ], 'widgetmanager.database');
-
-       
+        $this->publishes([
+            __DIR__.'/app/Http/Controllers/Admin/WidgetBodyController.php' => base_path('app/Http/Controllers/Admin/WidgetBodyController.php'),
+        ], 'widgetmanager.widgetbodycontroller');
+        
         // Publishing the views.
         /*$this->publishes([
             __DIR__.'/../resources/views' => base_path('resources/views/vendor/almosoft'),
