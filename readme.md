@@ -1,9 +1,9 @@
 # widgetmanager
 
-[![Latest Version on Packagist][ico-version]][https://packagist.org/packages/almosoft/widgetmanager]
+[![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
-
+[![StyleCI][ico-styleci]][link-styleci]
 
 Widget manager for backpackforlaravel.
 
