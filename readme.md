@@ -1,6 +1,6 @@
 # widgetmanager
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Latest Version on Packagist][ico-version]][https://packagist.org/packages/almosoft/widgetmanager]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 
