@@ -41,7 +41,7 @@ class WidgetboardWidgetCrudController extends CrudController
                 'type'=>'select',
                 'entity'=>'widgetboard',
                 'attribute'=>'name',
-                'model'=>'almosoft\widgetmanager\Models\widgetboard'
+                'model'=>'almosoft\widgetmanager\Models\Widgetboard'
             ],
             [
                 'name'=>'widget_id',
@@ -49,7 +49,7 @@ class WidgetboardWidgetCrudController extends CrudController
                 'type'=>'select',
                 'entity'=>'widget',
                 'attribute'=>'name',
-                'model'=>'almosoft\widgetmanager\Models\widget'
+                'model'=>'almosoft\widgetmanager\Models\Widget'
             ],
             [
                 'name'=>'col',
@@ -69,7 +69,7 @@ class WidgetboardWidgetCrudController extends CrudController
                 'type'=>'select',
                 'entity'=>'widgetboard',
                 'attribute'=>'name',
-                'model'=>'almosoft\widgetmanager\Models\widgetboard'
+                'model'=>'almosoft\widgetmanager\Models\Widgetboard'
             ],
             [
                 'name'=>'widget_id',
@@ -77,7 +77,7 @@ class WidgetboardWidgetCrudController extends CrudController
                 'type'=>'select',
                 'entity'=>'widget',
                 'attribute'=>'name',
-                'model'=>'almosoft\widgetmanager\Models\widget'
+                'model'=>'almosoft\widgetmanager\Models\Widget'
             ],
             [
                 'name'=>'col',
