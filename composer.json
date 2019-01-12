@@ -10,7 +10,7 @@
             "homepage": "https://github.com/Aleksandr1705/widgetmanager"
         }
     ],
-    "homepage": "https://github.com/Aleksandr1705/widgetmanager",
+    "homepage": "https://github.com/Aleksandr1705",
     "keywords": ["Laravel", "widgetmanager"],
     "require": {
         "illuminate/support": "~5"
