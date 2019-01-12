@@ -2,7 +2,5 @@
     <div class = "box-header with-border">
         <div class = "box-title">{{ $widget->descr }}</div>
     </div>
-
-    <div class = "box-body"></div>
-    
+    <div class = "box-body"></div>    
 </div>
