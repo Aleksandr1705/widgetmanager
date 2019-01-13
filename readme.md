@@ -56,12 +56,11 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 * Add widgets to widgetboard;
 * Add functions for widgets to WidgetBodyController, that returns body of widget;
 
-## Note:
-``` bash
-AdminLTE has error with box-refresh as described in 
-https://github.com/almasaeed2010/AdminLTE/issues/1976,
+# Note
+```
+AdminLTE has error with box-refresh as described in [AdminLTE issue 1976](https://github.com/almasaeed2010/AdminLTE/issues/1976),
 but not fixed in version 2.4.8 yet. 
-Fixed file https://github.com/Aleksandr1705/widgetmanager/blob/master/src/public/vendor/adminlte/dist/js/adminlte.min.js 
+Fixed file [adminlte.min.js](https://github.com/Aleksandr1705/widgetmanager/blob/master/src/public/vendor/adminlte/dist/js/adminlte.min.js) 
 copy to your public\vendor\adminlte\dist\js\.
 ```
 
