@@ -62,8 +62,8 @@ class Widget extends Model {
      */
     public function setImgAttribute($value) {
         $attribute_name = "img";
-        $disk = "public";
-        $destination_path = "uploads/widgets";
+        $disk = config('widgetmanager.disk','public');
+        $destination_path = "widgets";
 
         // if the image was erased
         if ($value == null) {

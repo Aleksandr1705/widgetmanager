@@ -34,7 +34,7 @@ class widgetmanagerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/widgetmanager.php', 'widgetmanager');
+        $this->mergeConfigFrom(__DIR__.'/../config/almosoft/widgetmanager.php', 'widgetmanager');
 
         // Register the service the package provides.
         $this->app->singleton('widgetmanager', function ($app) {
@@ -62,7 +62,7 @@ class widgetmanagerServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/widgetmanager.php' => config_path('widgetmanager.php'),
+            __DIR__.'/../config/almosoft/widgetmanager.php' => config_path('widgetmanager.php'),
         ], 'widgetmanager.config');
         $this->publishes([
             __DIR__.'/app/Http/Controllers/Admin/WidgetBodyController.php' => base_path('app/Http/Controllers/Admin/WidgetBodyController.php'),
