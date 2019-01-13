@@ -15,18 +15,6 @@ $ php artisan migrate
 $ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayoutsSeeder
 ```
 
-## Usage
-
-Add widgetboard to dashboard view:
-``` bash
-{!! widgetmanager::GetWidgetBoard('widgetboard name') !!}
-```
-
-Add single widget:
-``` bash
-{!! widgetmanager::GetWidget('widget name') !!}
-```
-
 * Add menus to sidebar:
 ``` bash
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-tag'></i> <span>Widgets</span></a></li>"
@@ -55,11 +43,22 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.views"
 ```
 
+## Usage
+
+Add widgetboard to dashboard view:
+``` bash
+{!! widgetmanager::GetWidgetBoard('widgetboard name') !!}
+```
+
+Add single widget:
+``` bash
+{!! widgetmanager::GetWidget('widget name') !!}
+```
 
 * Add widgets;
 * Add widgetboards;
 * Add widgets to widgetboard;
-* Add functions for widgets to WidgetBodyController, that returns body of widget;
+* Add functions for widgets in WidgetBodyController, that returns body of widget;
 
 ## Note
 
