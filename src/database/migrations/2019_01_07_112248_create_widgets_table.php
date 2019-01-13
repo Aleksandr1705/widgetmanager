@@ -14,10 +14,10 @@ class CreateWidgetsTable extends Migration
     {
         Schema::create('widgets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('descr');
+            $table->string('name')->unique()->notnull();
+            $table->string('descr')->nullable();
             $table->string('func')->notnull();
-            $table->string('img');
+            $table->string('img')->nullable();
             
             $table->timestamps();
         });

@@ -35,38 +35,48 @@ class WidgetCrudController extends CrudController {
         $this->crud->addFields([
             [
                 'name' => 'name',
-                'label' => 'Название'
+                'label' => 'Title'
             ],
             [
-                'name'=>'descr',
-                'label'=>'Описание'
+                'name' => 'descr',
+                'label' => 'Description',
+                'required' => true
             ],
             [
-                'name'=>'img',
-                'label'=>'Картинка',
-                'type'=>'image',
-                'upload'=>true,
-                'crop'=>true,
-                'prefix'=>'storage/'
+                'name' => 'func',
+                'label' => 'Function name',
+                'hint' => 'Function name for widget in WidgetBodyController without spaces'
+            ],
+            [
+                'name' => 'img',
+                'label' => 'Image',
+                'type' => 'image',
+                'upload' => true,
+                'crop' => true,
+                'prefix' => 'storage/'
             ]
         ]);
 
         $this->crud->setColumns([
             [
                 'name' => 'name',
-                'label' => 'Название'
+                'label' => 'Title'
             ],
             [
-                'name'=>'descr',
-                'label'=>'Описание'
+                'name' => 'descr',
+                'label' => 'Description'
             ],
             [
-                'name'=>'img',
-                'label'=>'Картинка',
-                'type'=>'image',
-                'upload'=>true,
-                'crop'=>true,
-                'prefix'=>'storage/'
+                'name' => 'func',
+                'label' => 'Function name'
+            ],
+            [
+                'name' => 'img',
+                'label' => 'Image',
+                'type' => 'image',
+                'upload' => true,
+                'crop' => true,
+                'prefix' => 'storage/'
             ]
         ]);
         // add asterisk for fields that are required in WidgetRequest

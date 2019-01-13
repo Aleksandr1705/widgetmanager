@@ -19,7 +19,7 @@ class Widget extends Model {
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ['name', 'descr', 'img'];
+    protected $fillable = ['name', 'descr', 'img','func'];
 
     // protected $hidden = [];
     // protected $dates = [];
