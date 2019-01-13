@@ -40,6 +40,11 @@ php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('wid
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.widgetbodycontroller"
 ```
 
+* Publish assets:
+``` bash
+php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.assets"
+```
+
 * Publish config (optionally):
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.config"
@@ -49,6 +54,7 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.views"
 ```
+
 
 * Add widgets;
 * Add widgetboards;

@@ -74,6 +74,11 @@ class widgetmanagerServiceProvider extends ServiceProvider
         ], 'widgetmanager.views');
 
         // Publishing assets.
+        $this->publishes([
+            __DIR__.'/public/vendor/almosoft' => public_path('vendor/almosoft'),
+        ], 'widgetmanager.assets');
+        
+        // Publishing assets.
         /*$this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/almosoft'),
         ], 'widgetmanager.views');*/
