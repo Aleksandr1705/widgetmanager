@@ -1,7 +1,7 @@
 {
     "name": "almosoft/widgetmanager",
     "description": ":Widget manager for backpackforlaravel",
-    "license":"proprietary",
+    "license":"MIT",
     "authors": [
         {
             "name": "Aleksander",
