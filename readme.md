@@ -50,6 +50,12 @@ Publish views:
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.views"
 ```
+
+* Add widgets;
+* Add widgetboards;
+* Add widgets to widgetboard;
+* Add functions for widgets to WidgetBodyController;
+
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
