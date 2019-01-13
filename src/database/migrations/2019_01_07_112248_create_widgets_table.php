@@ -16,6 +16,7 @@ class CreateWidgetsTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->string('descr');
+            $table->string('func')->notnull();
             $table->string('img');
             
             $table->timestamps();
