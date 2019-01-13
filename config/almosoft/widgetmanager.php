@@ -2,5 +2,5 @@
 
 return [
     //
-    'disk'=>'widgets'
+    'disk'=>'public'
 ];
