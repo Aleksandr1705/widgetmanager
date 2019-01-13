@@ -49,7 +49,7 @@ class WidgetLayoutsSeeder extends Seeder
         \DB::table('widgetboards')->delete();
         \DB::table('widgetboards')->insert([
             [
-                'name'=>'System dashboard',
+                'name'=>'System widgetboard',
                 'widgetlayout_id'=>1
             ]
         ]);

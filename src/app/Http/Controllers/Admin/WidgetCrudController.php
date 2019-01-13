@@ -35,6 +35,10 @@ class WidgetCrudController extends CrudController {
         $this->crud->addFields([
             [
                 'name' => 'name',
+                'label' => 'Name'
+            ],
+            [
+                'name' => 'title',
                 'label' => 'Title'
             ],
             [
@@ -60,6 +64,10 @@ class WidgetCrudController extends CrudController {
         $this->crud->setColumns([
             [
                 'name' => 'name',
+                'label' => 'Name'
+            ],
+            [
+                'name' => 'title',
                 'label' => 'Title'
             ],
             [
