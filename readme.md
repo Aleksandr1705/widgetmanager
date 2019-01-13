@@ -36,17 +36,17 @@ php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('wid
 
 ```
 
-Publish controller:
+Publish WidgetBodyController controller:
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.widgetbodycontroller"
 ```
 
-Publish config:
+Publish config (optionally):
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.config"
 ```
 
-Publish views:
+Publish views (optionally):
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.views"
 ```
