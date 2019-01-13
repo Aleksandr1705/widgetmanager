@@ -6,21 +6,20 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use almosoft\widgetmanager\Models\Widget;
 
-class WidgetBodyController extends Controller
-{
+class WidgetBodyController extends Controller {
+
     //
-    public function getBody(Widget $widget){
-        $body="";
-        switch($widget->id){
-            case 0:
-                break;
-            case 1:
-                $body="w1";
-                break;
-            case 2:
-                $body="w2";
-                break;
+    public function getBody(Widget $widget) {
+        $body = "";
+        $func = $widget->func;
+        if (method_exists($this, $func)) {
+            $body = $this->$func();
+        }else{
+            $body="Method $func does not exists in WidgetBodyController";
         }
         return $body;
     }
+
+    //Add here your widgets methods
+
 }
