@@ -27,6 +27,8 @@ class WidgetboardWidgetRequest extends FormRequest
     {
         return [
             // 'name' => 'required|min:5|max:255'
+            'col'=>'required|min:0|max:255',
+            'position'=>'required|min:0|max:255'
         ];
     }
 

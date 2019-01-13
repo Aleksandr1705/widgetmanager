@@ -37,7 +37,7 @@ class WidgetboardWidgetCrudController extends CrudController
         $this->crud->setColumns([
             [
                 'name'=>'widgetboard_id',
-                'label'=>'Рабочий стол',
+                'label'=>'Widgetboard',
                 'type'=>'select',
                 'entity'=>'widgetboard',
                 'attribute'=>'name',
@@ -45,7 +45,7 @@ class WidgetboardWidgetCrudController extends CrudController
             ],
             [
                 'name'=>'widget_id',
-                'label'=>'Виджет',
+                'label'=>'Widget',
                 'type'=>'select',
                 'entity'=>'widget',
                 'attribute'=>'name',
@@ -53,19 +53,19 @@ class WidgetboardWidgetCrudController extends CrudController
             ],
             [
                 'name'=>'col',
-                'label'=>'Колонка',
+                'label'=>'Column',
                 'type'=>'number'
             ],
             [
                 'name'=>'position',
-                'label'=>'Позиция',
+                'label'=>'Position',
                 'type'=>'number'
             ]
         ]);
         $this->crud->addFields([            
             [
                 'name'=>'widgetboard_id',
-                'label'=>'Рабочий стол',
+                'label'=>'Widgetboard',
                 'type'=>'select',
                 'entity'=>'widgetboard',
                 'attribute'=>'name',
@@ -73,7 +73,7 @@ class WidgetboardWidgetCrudController extends CrudController
             ],
             [
                 'name'=>'widget_id',
-                'label'=>'Виджет',
+                'label'=>'Widget',
                 'type'=>'select',
                 'entity'=>'widget',
                 'attribute'=>'name',
@@ -81,13 +81,15 @@ class WidgetboardWidgetCrudController extends CrudController
             ],
             [
                 'name'=>'col',
-                'label'=>'Колонка',
-                'type'=>'number'
+                'label'=>'Column',
+                'type'=>'number',
+                'default'=>0
             ],
             [
                 'name'=>'position',
-                'label'=>'Позиция',
-                'type'=>'number'
+                'label'=>'Position',
+                'type'=>'number',
+                'default'=>0
             ]
         ]);
         // add asterisk for fields that are required in WidgetboardRequest

@@ -19,7 +19,7 @@ $ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayout
 
 Add to your dashboard view:
 ``` bash
-{!! widgetmanager::GetWidgetBoard() !!}
+{!! widgetmanager::GetWidgetBoard('widgetboard name') !!}
 ```
 Add to menus to sidebar:
 ``` bash

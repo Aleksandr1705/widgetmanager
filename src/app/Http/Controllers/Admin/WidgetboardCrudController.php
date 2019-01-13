@@ -37,11 +37,11 @@ class WidgetboardCrudController extends CrudController
         $this->crud->setColumns([
             [
                 'name'=>'name',
-                'label'=>'Название'
+                'label'=>'Name'
             ],
             [
                 'name'=>'widgetlayout_id',
-                'label'=>'Разметка',
+                'label'=>'Layout',
                 'type'=>'select',
                 'entity'=>'widgetlayout',
                 'attribute'=>'name',
@@ -51,11 +51,11 @@ class WidgetboardCrudController extends CrudController
         $this->crud->addFields([
             [
                 'name'=>'name',
-                'label'=>'Название'
+                'label'=>'Name'
             ],
             [
                 'name'=>'widgetlayout_id',
-                'label'=>'Разметка',
+                'label'=>'Layout',
                 'type'=>'select',
                 'entity'=>'widgetlayout',
                 'attribute'=>'name',

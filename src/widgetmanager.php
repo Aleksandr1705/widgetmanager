@@ -3,6 +3,7 @@
 namespace almosoft\widgetmanager;
 
 use almosoft\widgetmanager\Models\Widgetboard;
+use almosoft\widgetmanager\Models\Widget;
 
 class widgetmanager {
 
@@ -11,8 +12,8 @@ class widgetmanager {
         return true;
     }
 
-    public function getWidgetBoard() {
-        $widgetboard = Widgetboard::first();
+    public function getWidgetBoard($name) {
+        $widgetboard = Widgetboard::where('name',$name)->first();
         if ($widgetboard) {
             $widgetlayout = $widgetboard->widgetlayout;
             if ($widgetlayout) {
@@ -21,9 +22,17 @@ class widgetmanager {
                 return '';
             }
         } else {
-            return 'No dashboards added';
+            return "The dashboards with name $name is absent";
         }
     }
 
+    public function getWidget($name){
+        $widget= Widget::where('name',$name)->first();
+        if($widget){
+            return view("almosoft::widget.widget",compact('widget'));
+        }else{
+            return "The widget with name $name is absent";
+        }
+    }
     
 }

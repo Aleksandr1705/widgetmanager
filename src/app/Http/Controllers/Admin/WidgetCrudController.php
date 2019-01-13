@@ -49,7 +49,7 @@ class WidgetCrudController extends CrudController {
             [
                 'name' => 'func',
                 'label' => 'Function name',
-                'hint' => 'Function name for widget in WidgetBodyController without spaces'
+                'hint' => 'Function name (without spaces) for widget function in WidgetBodyController'
             ],
             [
                 'name' => 'img',
