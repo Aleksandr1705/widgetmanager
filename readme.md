@@ -34,6 +34,16 @@ Publish controller:
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.widgetbodycontroller"
 ```
+
+Publish config:
+``` bash
+php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.config"
+```
+
+Publish views:
+``` bash
+php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.views"
+```
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
