@@ -17,7 +17,7 @@ $ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayout
 
 * Add menus to sidebar:
 ``` bash
-php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetpage') }}'><i class='fa fa-tag'></i> <span>Main</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetmainpage') }}'><i class='fa fa-tag'></i> <span>Main</span></a></li>"
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-tag'></i> <span>Widgets</span></a></li>"
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetlayout') }}'><i class='fa fa-tag'></i> <span>Widget Layouts</span></a></li>"
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-tag'></i> <span>Widgetboards</span></a></li>"

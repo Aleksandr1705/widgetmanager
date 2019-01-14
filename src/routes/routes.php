@@ -12,5 +12,6 @@ Route::group([
     CRUD::resource('widgetboardwidget','WidgetboardWidgetCrudController');
     
     Route::get('widgetbody/{widget}','WidgetBodyController@getBody');
+    Route::get('widgetmainpage','WidgetMainPageController@index');
     
 }); // this should be the absolute last line of this file
