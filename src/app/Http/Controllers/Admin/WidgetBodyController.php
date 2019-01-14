@@ -1,25 +1,20 @@
 <?php
 
-namespace almosoft\widgetmanager\Http\Controllers\Admin;
+namespace almosoft\widgetmanager\app\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use almosoft\widgetmanager\Models\Widget;
+use almosoft\widgetmanager\app\Http\Controllers\Admin\WidgetBaseController;
 
-class WidgetBodyController extends Controller {
+
+class WidgetBodyController extends WidgetBaseController {
 
     //
-    public function getBody(Widget $widget) {
-        $body = "";
-        $func = $widget->func;
-        if (method_exists($this, $func)) {
-            $body = $this->$func();
-        }else{
-            $body="Method $func does not exists in WidgetBodyController";
-        }
-        return $body;
-    }
+    
 
     //Add here your widgets methods
-
+    public function Widget1(){
+        return "hello world!";
+    }
 }

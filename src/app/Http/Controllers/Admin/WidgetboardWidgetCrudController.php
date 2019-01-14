@@ -1,6 +1,6 @@
 <?php
 
-namespace almosoft\widgetmanager\Http\Controllers\Admin;
+namespace almosoft\widgetmanager\app\Http\Controllers\Admin;
 
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 // VALIDATION: change the requests to match your own file names if you need form validation

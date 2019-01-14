@@ -3,7 +3,7 @@
 Route::group([
     'prefix'     => config('backpack.base.route_prefix', 'admin'),
     'middleware' => ['web', config('backpack.base.middleware_key', 'admin')],
-    'namespace'  => 'almosoft\widgetmanager\Http\Controllers\Admin',
+    'namespace'  => 'almosoft\widgetmanager\app\Http\Controllers\Admin',
 ], function () { // custom admin routes
     
     CRUD::resource('widget','WidgetCrudController');

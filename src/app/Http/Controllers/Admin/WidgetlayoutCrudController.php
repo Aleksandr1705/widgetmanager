@@ -1,5 +1,5 @@
 <?php
-namespace almosoft\widgetmanager\Http\Controllers\Admin;
+namespace almosoft\widgetmanager\app\Http\Controllers\Admin;
 
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
