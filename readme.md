@@ -59,7 +59,7 @@ Add single widget:
 * Add widgets;
 * Add widgetboards;
 * Add widgets to widgetboard;
-* Add functions for widgets in WidgetBodyController, that returns body of widget;
+* Add functions for widgets in WidgetBodyController, which returns body of widget;
 
 ## Note
 
