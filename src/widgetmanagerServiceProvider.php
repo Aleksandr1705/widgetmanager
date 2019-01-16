@@ -70,7 +70,7 @@ class widgetmanagerServiceProvider extends ServiceProvider
         
         // Publishing the views.
         $this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/almosoft'),
+            __DIR__.'/resources/views' => base_path('resources/views/vendor/almosoft'),
         ], 'widgetmanager.views');
 
         // Publishing assets.
