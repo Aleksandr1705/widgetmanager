@@ -44,6 +44,12 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 ```
 
 ## Usage
+Add asset to dashboard after line: @extends('backpack::layout')
+``` html
+@section('after_scripts')
+    <script src="{{ asset('vendor/almosoft') }}/widgetmanager/main.js"></script>    
+@endsection
+```
 
 Add widgetboard to dashboard view:
 ``` bash
