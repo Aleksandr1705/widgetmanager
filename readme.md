@@ -45,26 +45,23 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 
 ## Usage
 
-Add asset to dashboard view (resources/views/vendor/backpack/base/dashboard.blade.php) after line: @extends('backpack::layout')
-``` html
-@section('after_scripts')
-    <script src="{{ asset('vendor/almosoft') }}/widgetmanager/main.js"></script>    
-@endsection
-```
-If the file is missing, you need to publish it from backpackforlaravel:
-``` bash
-php artisan vendor:publish --provider="Backpack\Base\BaseServiceProvider" --tag="minimum"
-```
+Add widgetboard to dashboard view (resources/views/vendor/backpack/base/dashboard.blade.php) after line: @extends('backpack::layout')
 
-Add widgetboard to dashboard view:
 ``` bash
 {!! widgetmanager::GetWidgetBoard('widgetboard name') !!}
 ```
 
-Add single widget:
+Or single widget:
 ``` bash
 {!! widgetmanager::GetWidget('widget name') !!}
 ```
+
+If dashboard view is missing, you need to publish it from backpackforlaravel:
+``` bash
+php artisan vendor:publish --provider="Backpack\Base\BaseServiceProvider" --tag="minimum"
+```
+
+
 
 * Add widgets;
 * Add widgetboards;

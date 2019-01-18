@@ -1,3 +1,5 @@
+@extends('almosoft::widget.layouts.base.layoutbase')
+@section('almosoftwidgetboard')
 <div class="row">
     <div class="col-md-12">
       @foreach($widgetboard->widgets as $widget)
@@ -7,3 +9,4 @@
         @endforeach
     </div>
 </div>
+@endsection
