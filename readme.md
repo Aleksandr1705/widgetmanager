@@ -14,7 +14,7 @@ $ composer require almosoft/widgetmanager
 $ php artisan migrate
 $ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayoutsSeeder
 ```
-
+## Manual Installation
 * Add menus to sidebar:
 ``` bash
 php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-tag'></i> <span>Widgets</span></a></li>"
