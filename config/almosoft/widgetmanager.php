@@ -2,5 +2,6 @@
 
 return [
     //
-    'disk'=>'public'
+    'disk'=>'public',
+    'storage_prefix' => 'storage/'
 ];

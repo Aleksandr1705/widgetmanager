@@ -12,12 +12,15 @@ class widgetmanager {
         return true;
     }
 
+    
+    
     public function getWidgetBoard($name) {
         $widgetboard = Widgetboard::where('name',$name)->first();
+        $widgets=Widget::get();
         if ($widgetboard) {
             $widgetlayout = $widgetboard->widgetlayout;
             if ($widgetlayout) {
-                return view("almosoft::widget.layouts." . $widgetlayout->fname, compact('widgetboard'));
+                return view("almosoft::widget.layouts." . $widgetlayout->fname, compact('widgetboard','widgets'));
             } else {
                 return '';
             }

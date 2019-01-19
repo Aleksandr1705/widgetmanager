@@ -78,6 +78,7 @@ class Widget extends Model {
         if (starts_with($value, 'data:image')) {
             // 0. Make the image
             $image = \Image::make($value)->encode('jpg', 90);
+            $image->resize(100,100);
             // 1. Generate a filename.
             $filename = md5($value . time()) . '.jpg';
             
