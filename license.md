@@ -1,5 +1,5 @@
 # The license
 
-Copyright (c) author name <author email>
+Copyright (c) Aleksandr Almosov <author email>
 
 ...Add your license text here...

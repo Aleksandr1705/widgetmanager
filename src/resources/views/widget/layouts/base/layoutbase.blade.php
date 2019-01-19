@@ -1,5 +1,5 @@
 @section('after_scripts')
-<script src="{{ asset('vendor/almosoft') }}/widgetmanager/main.js"></script>    
+<script src="{{ asset('vendor/almosoft') }}/widgetmanager/widgetmanager.js"></script>    
 @endsection
 <div class='row'>
     <div class='col-md-12'>
