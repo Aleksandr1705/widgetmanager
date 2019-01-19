@@ -48,7 +48,9 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 Add widgetboard to dashboard view (resources/views/vendor/backpack/base/dashboard.blade.php) after line: @extends('backpack::layout')
 
 ``` bash
-{!! widgetmanager::GetWidgetBoard('widgetboard name') !!}
+<div id="widgetboard">
+    {!! widgetmanager::GetWidgetBoard('system widgetboard') !!}
+</div>
 ```
 
 Or single widget:

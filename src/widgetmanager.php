@@ -41,4 +41,7 @@ class widgetmanager {
     public function getWidgetMainPage(){
         return view("almosoft::widget.widgetmainpage");
     }
+    
+    
+    
 }

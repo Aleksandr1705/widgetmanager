@@ -7,8 +7,10 @@ Route::group([
     
     Route::get('widgetbody/{widget}','WidgetBodyController@getBody');
     Route::get('widgetmainpage',function(){
-        return widgetmanager::getWidgetMainPage();
-    });
+        //return widgetmanager::getWidgetMainPage();
+        return widgetmanager::GetWidgetBoard('system widgetboard');
+    })->name('widgetmainpage');
+    
     
 });
 Route::group([
@@ -22,4 +24,5 @@ Route::group([
     CRUD::resource('widgetlayout','WidgetlayoutCrudController');
     CRUD::resource('widgetboardwidget','WidgetboardWidgetCrudController');
      
+    Route::get('widgetapi','WidgetBaseController@api')->name('widgetapi');
 }); // this should be the absolute last line of this file

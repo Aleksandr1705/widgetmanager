@@ -10,7 +10,7 @@
                 @foreach($widgets as $widget)
                 <div class="media">
                     <div class="media-left">
-                        <a href="#">
+                        <a style="cursor:pointer" onclick="Widgetmanager.addWidgetToWidgetboard({{$widgetboard->id}},{{$widget->id}})">
                             @if($widget->img)
                             <img style='border-radius: 5px' class="media-object" src="{{ asset((config('widgetmanager.storage_prefix','')) .$widget->img) }}" alt="{{ $widget->title }}">
                             @else

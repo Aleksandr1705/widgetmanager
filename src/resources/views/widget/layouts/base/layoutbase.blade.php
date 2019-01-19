@@ -1,6 +1,9 @@
 @section('after_scripts')
+<script src="{{ asset('vendor/adminlte/bower_components/jquery-ui') }}/jquery-ui.min.js"></script>
 <script src="{{ asset('vendor/almosoft') }}/widgetmanager/widgetmanager.js"></script>    
 @endsection
+<input type="hidden" id="widgetapiurl" value="{{ route('widgetapi') }}" />
+<input type="hidden" id="widgetmainpage" value="{{ route('widgetmainpage') }}" />
 <div class='row'>
     <div class='col-md-12'>
         <div class='pull-right' style='margin-bottom: 10px'>

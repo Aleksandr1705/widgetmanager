@@ -40,7 +40,7 @@ class Widgetboard extends Model
     }
     public function widgets(){
         return $this->belongsToMany("almosoft\widgetmanager\Models\Widget","widgetboard_widgets")->using('almosoft\widgetmanager\Models\WidgetboardWidget')->
-                        withPivot(['col','position']);
+                        withPivot(['id','col','position']);
     }
     /*
     |--------------------------------------------------------------------------
