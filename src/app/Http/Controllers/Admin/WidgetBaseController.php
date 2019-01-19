@@ -42,6 +42,7 @@ class WidgetBaseController extends Controller {
                 if ($widgetboardwidget) {
                     $widgetboardwidget->delete();
                 }
+                break;
             case "saveWidgetPositions":
                 $widgets = $request->widgets;
                 foreach ($widgets as $widget) {

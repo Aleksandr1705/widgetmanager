@@ -1,17 +1,17 @@
 @extends('almosoft::widget.layouts.base.layoutbase')
 @section('almosoftwidgetboard')
 <div class="row">
-    <div class="col-md-7">
-        @foreach($widgetboard->widgets as $widget)
-            @if($widget->pivot->col==0)
-                {!! $widget->View !!}
+    <div class="col-md-7 connectedSortable ui-sortable">
+        @foreach($widgetboardwidgets as $widgetboardwidget)
+            @if($widgetboardwidget->col==0)
+                {!! $widgetboardwidget->View !!}
             @endif
         @endforeach
     </div>
-    <div class="col-md-5">
-        @foreach($widgetboard->widgets as $widget)
-            @if($widget->pivot->col==1)
-                {!! $widget->View !!}
+    <div class="col-md-5 connectedSortable ui-sortable">
+        @foreach($widgetboardwidgets as $widgetboardwidget)
+            @if($widgetboardwidget->col==1)
+                {!! $widgetboardwidget->View !!}
             @endif
         @endforeach
     </div>
