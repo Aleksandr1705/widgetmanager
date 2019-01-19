@@ -20,6 +20,7 @@ Widgetmanager.addWidgetToWidgetboard = function (widgetboard_id, widget_id) {
                 type: 'success'
             });
             Widgetmanager.refreshWidgetboard();
+            
 
         },
         error: function () {
@@ -44,6 +45,7 @@ Widgetmanager.deleteWidgetFromWidgetboard = function (widgetboardwidget_id) {
                 text: 'Widget deleted successfully',
                 type: 'success'
             });
+            Widgetmanager.savePosition();
         },
         error: function () {
             new PNotify({
@@ -62,7 +64,7 @@ Widgetmanager.refreshWidgetboard = function () {
             $("[name='widget']").boxWidget();
             $("[name='widget']").boxRefresh('load');
             Widgetmanager.reinit();
-
+            Widgetmanager.savePosition();
         },
         error: function () {
             new PNotify({
@@ -82,10 +84,45 @@ Widgetmanager.reinit = function () {
         connectWith: '.connectedSortable',
         handle: '.box-header, .nav-tabs',
         forcePlaceholderSize: true,
-        zIndex: 999999
+        zIndex: 999999,
+        stop:function(event,ui){
+            Widgetmanager.savePosition();
+        }
     });
     $('.connectedSortable .box-header, .connectedSortable .nav-tabs-custom').css('cursor', 'move');
-    $("[name='widget']").on('change',function(event,ui){
-        console.log(ui);
+    
+};
+Widgetmanager.savePosition=function(){
+    var widgets=[];
+    var widget={};
+    var sortable=$(".connectedSortable");
+    $(sortable).each(function(column){
+        $(this).find('.box').each(function(position){
+            widget={
+                column:column,
+                position:position,
+                widgetboardwidget_id:$(this).data('pivot_id')
+            };
+            widgets.push(widget);            
+        });
+        
+    });;
+    if(widgets.length>0){
+        $.ajax({
+        url: $('#widgetapiurl').val(),
+        data: {
+            action: 'saveWidgetPositions',
+            widgets:widgets
+        },
+        success: function () {
+        },
+        error: function () {
+            new PNotify({
+                text: 'Error',
+                type: 'error'
+            });
+
+        }
     });
-}
+    }
+};
