@@ -4,6 +4,7 @@ namespace almosoft\widgetmanager;
 
 use almosoft\widgetmanager\Models\Widgetboard;
 use almosoft\widgetmanager\Models\Widget;
+use almosoft\widgetmanager\Models\WidgetboardWidget;
 
 class widgetmanager {
 
@@ -16,11 +17,12 @@ class widgetmanager {
     
     public function getWidgetBoard($name) {
         $widgetboard = Widgetboard::where('name',$name)->first();
-        $widgets=Widget::get();
         if ($widgetboard) {
+            $widgets=Widget::get();
             $widgetlayout = $widgetboard->widgetlayout;
+            $widgetboardwidgets= WidgetboardWidget::where('widgetboard_id',$widgetboard->id)->orderBy('position','asc')->get();
             if ($widgetlayout) {
-                return view("almosoft::widget.layouts." . $widgetlayout->fname, compact('widgetboard','widgets'));
+                return view("almosoft::widget.layouts." . $widgetlayout->fname, compact('widgetboard','widgetboardwidgets','widgets'));
             } else {
                 return '';
             }
