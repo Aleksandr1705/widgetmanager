@@ -129,5 +129,5 @@ license. Please see the [license file](license.md) for more information.
 [link-downloads]: https://packagist.org/packages/almosoft/widgetmanager
 [link-travis]: https://travis-ci.org/almosoft/widgetmanager
 [link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/almosoft
-[link-contributors]: ../../contributors]
+[link-author]: https://github.com/Aleksandr1705
+[link-contributors]: ../../contributors
