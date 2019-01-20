@@ -22,7 +22,7 @@ class Install extends Command
      *
      * @var string
      */
-    protected $description = 'Require dev packages and publish files for almosoft\widgetmanager to work';
+    protected $description = 'Publish files for almosoft\widgetmanager to work';
 
     /**
      * Create a new command instance.

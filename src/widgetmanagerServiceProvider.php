@@ -6,6 +6,9 @@ use Illuminate\Support\ServiceProvider;
 
 class widgetmanagerServiceProvider extends ServiceProvider
 {
+    protected $commands = [
+        \almosoft\widgetmanager\app\Console\Commands\Install::class,
+    ];
     /**
      * Perform post-registration booting of services.
      *
@@ -92,5 +95,7 @@ class widgetmanagerServiceProvider extends ServiceProvider
 
         // Registering package commands.
         // $this->commands([]);
+        $this->commands($this->commands);
+        
     }
 }
