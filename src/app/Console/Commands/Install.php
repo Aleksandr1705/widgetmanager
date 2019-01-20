@@ -15,7 +15,9 @@ class Install extends Command
      *
      * @var string
      */
-    protected $signature = 'almosoft:widgetmanager:install';
+    protected $signature = 'almosoft:widgetmanager:install
+                                {--timeout=300} : How many seconds to allow each process to run.
+                                {--debug} : Show process output or not. Useful for debugging.';
 
     /**
      * The console command description.
