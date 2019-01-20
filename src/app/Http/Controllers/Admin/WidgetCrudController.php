@@ -57,7 +57,8 @@ class WidgetCrudController extends CrudController {
                 'type' => 'image',
                 'upload' => true,
                 'crop' => true,
-                'prefix' => config('widgetmanager.storage_prefix', 'storage/')
+                'prefix' => config('widgetmanager.storage_prefix', 'storage/'),
+                'aspect_ratio' => 1
             ]
         ]);
 

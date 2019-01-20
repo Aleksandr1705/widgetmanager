@@ -23,7 +23,7 @@ class WidgetlayoutCrudController extends CrudController
         */
         $this->crud->setModel('almosoft\widgetmanager\Models\Widgetlayout');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/widgetlayout');
-        $this->crud->setEntityNameStrings('widgetlayout', 'widgetlayouts');
+        $this->crud->setEntityNameStrings('widgetboard layout', 'widgetboard layouts');
 
         /*
         |--------------------------------------------------------------------------
