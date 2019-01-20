@@ -7,13 +7,13 @@ Simple widget manager for backpackforlaravel.
 
 ## Installation
 
-During installation your current dashboard view will be replaced with standard dashboard view from backpack. 
 Via Composer
 
 ``` bash
 composer require almosoft/widgetmanager
 php artisan almosoft:widgetmanager:install
 ```
+During installation your current dashboard view will be replaced with standard dashboard view from backpack. 
 
 ## Manual Installation
 ``` bash
