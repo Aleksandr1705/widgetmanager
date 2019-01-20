@@ -70,14 +70,14 @@ php artisan vendor:publish --provider="Backpack\Base\BaseServiceProvider" --tag=
 
 
 * Add widgets from Widgets menu;
+
 If image is not showing, probabaly you need to create storage link:
 ``` bash
 php artisan storage:link
 ```
 
-* Add widgetboards;
-* Add widgets to widgetboard;
 * Add functions for widgets in WidgetBodyController, which returns body of widget;
+* Add widgets to widgetboard from main dashboard;
 
 ## Important
 
@@ -85,7 +85,9 @@ php artisan storage:link
 > but not fixed in version 2.4.8 yet. 
 > Fixed file [adminlte.js](https://github.com/Aleksandr1705/widgetmanager/blob/master/src/public/vendor/adminlte/dist/js/adminlte.js) 
 > copy to your public\vendor\adminlte\dist\js\ directory.
-
+``` bash
+php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.adminltefix"
+```
 
 ## Change log
 
