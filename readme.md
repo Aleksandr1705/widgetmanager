@@ -7,6 +7,7 @@ Simple widget manager for backpackforlaravel.
 
 ## Installation
 
+During installation your current dashboard view will be replaced with standard dashboard view from backpack. 
 Via Composer
 
 ``` bash
