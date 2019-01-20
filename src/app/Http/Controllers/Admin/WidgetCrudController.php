@@ -47,6 +47,11 @@ class WidgetCrudController extends CrudController {
                 'required' => true
             ],
             [
+                'name'=>'nopadding',
+                'label'=>'No padding',
+                'type'=>'checkbox'
+            ],
+            [
                 'name' => 'func',
                 'label' => 'Function name',
                 'hint' => 'Function name (without spaces) for widget function in WidgetBodyController'
@@ -74,6 +79,11 @@ class WidgetCrudController extends CrudController {
             [
                 'name' => 'descr',
                 'label' => 'Description'
+            ],
+            [
+                'name'=>'nopadding',
+                'label'=>'No padding',
+                'type'=>'check'
             ],
             [
                 'name' => 'func',

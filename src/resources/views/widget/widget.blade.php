@@ -8,5 +8,5 @@
             </button>
         </div>
     </div>
-    <div class = "box-body"></div>    
+    <div class = "box-body {{ $widget->padding }}"></div>    
 </div>

@@ -19,7 +19,7 @@ class Widget extends Model {
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ['name', 'title', 'descr', 'img', 'func'];
+    protected $fillable = ['name', 'title', 'descr', 'img', 'func','nopadding'];
 
     // protected $hidden = [];
     // protected $dates = [];
@@ -60,6 +60,13 @@ class Widget extends Model {
         return view('almosoft::widget.widget', compact('widget'));
     }
 
+    public function getPaddingAttribute(){
+        if($this->nopadding){
+            return 'no-padding';
+        }else{
+            return '';
+        }
+    }
     /*
       |--------------------------------------------------------------------------
       | MUTATORS

@@ -19,7 +19,7 @@ class CreateWidgetsTable extends Migration
             $table->string('descr')->nullable();
             $table->string('func')->notnull();
             $table->string('img')->nullable();
-            
+            $table->boolean('nopadding')->notnull()->default(0);
             $table->timestamps();
         });
     }
