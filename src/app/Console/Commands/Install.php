@@ -76,6 +76,9 @@ class Install extends Command
         $this->line(" Publishing config");
         $this->executeProcess("php artisan vendor:publish --provider=\"almosoft\widgetmanager\widgetmanagerServiceProvider\" --tag=\"widgetmanager.config\"");        
 
+        $this->line(" Publishing backpack dashboard view");
+        $this->executeProcess("php artisan vendor:publish --provider=\"Backpack\Base\BaseServiceProvider\" --tag=\"views\"");        
+
         $this->progressBar->finish();
         $this->info(" almosoft\widgetmanager installation finished.");
     }
