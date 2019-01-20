@@ -3,7 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Simple widget manager for backpackforlaravel. 
+Simple widget manager for [backpackforlaravel](backpackforlaravel.com). 
 
 ## Installation
 
