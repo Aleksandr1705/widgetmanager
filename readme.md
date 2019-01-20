@@ -11,6 +11,7 @@ Via Composer
 
 ``` bash
 composer require almosoft/widgetmanager
+php artisan almosoft::widgetmanager::install
 ```
 
 ## Manual Installation
