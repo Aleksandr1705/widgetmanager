@@ -84,7 +84,8 @@ class WidgetCrudController extends CrudController {
                 'type' => 'image',
                 'upload' => true,
                 'crop' => true,
-                'prefix' => 'storage/'
+                'prefix' => 'storage/',
+                'aspect_ratio' => 1
             ]
         ]);
         // add asterisk for fields that are required in WidgetRequest
