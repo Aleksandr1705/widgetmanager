@@ -10,14 +10,14 @@ Simple widget manager for backpackforlaravel.
 Via Composer
 
 ``` bash
-$ composer require almosoft/widgetmanager
+composer require almosoft/widgetmanager
 ```
 
 ## Manual Installation
 ``` bash
-$ composer require almosoft/widgetmanager
-$ php artisan migrate
-$ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayoutsSeeder
+composer require almosoft/widgetmanager
+php artisan migrate
+php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayoutsSeeder
 ```
 * Add menus to sidebar:
 ``` bash
