@@ -6,7 +6,7 @@
 Simple widget manager for [backpackforlaravel][link-backpackforlaravel]. 
 
 ![Image](https://github.com/Aleksandr1705/images/blob/master/widgetmanager.PNG)
-[[https://github.com/Aleksandr1705/images/blob/master/widgetmanager.PNG|alt=octocat]]
+
 ## Installation
 
 Via Composer
