@@ -15,6 +15,8 @@ php artisan almosoft:widgetmanager:install
 ```
 During installation your current dashboard view will be replaced with standard dashboard view from backpack. 
 
+After install you need to fix adminlte js. [Adminlte fix](#important)
+
 ## Manual Installation
 ``` bash
 composer require almosoft/widgetmanager
@@ -88,7 +90,7 @@ php artisan storage:link
 > Fixed file [adminlte.js](https://github.com/Aleksandr1705/widgetmanager/blob/master/src/public/vendor/adminlte/dist/js/adminlte.js) 
 > copy to your public\vendor\adminlte\dist\js\ directory.
 ``` bash
-php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.adminltefix"
+php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.adminltefix" --force
 ```
 
 ## Change log
