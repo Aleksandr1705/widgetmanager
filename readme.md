@@ -3,7 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Simple widget manager for [backpackforlaravel](backpackforlaravel.com). 
+Simple widget manager for [backpackforlaravel][link-backpackforlaravel]. 
 
 ## Installation
 
@@ -131,3 +131,5 @@ license. Please see the [license file](license.md) for more information.
 [link-styleci]: https://styleci.io/repos/12345678
 [link-author]: https://github.com/Aleksandr1705
 [link-contributors]: ../../contributors
+
+[link-backpackforlaravel]: https://backpackforlaravel.com
