@@ -43,7 +43,7 @@ class Install extends Command
      */
     public function handle()
     {
-        $this->progressBar = $this->output->createProgressBar(10);
+        $this->progressBar = $this->output->createProgressBar(11);
         $this->progressBar->start();
         $this->info(" almosoft\widgetmanager installation started. Please wait...");
         $this->progressBar->advance();
