@@ -58,6 +58,10 @@ class WidgetCrudController extends CrudController {
                 'hint'=>trans('almosoft::base.Static_hint')
             ],
             [
+                'name' => 'body_classes',
+                'label' => trans('almosoft::base.Body_classes')
+            ],
+            [
                 'name' => 'func',
                 'label' => trans('almosoft::base.Function_name'),
                 'hint' => trans('almosoft::base.Function_name_hint')
@@ -95,6 +99,10 @@ class WidgetCrudController extends CrudController {
                 'name' => 'wstatic',
                 'label' => trans('almosoft::base.Static'),
                 'type' => 'check'
+            ],
+            [
+                'name' => 'body_classes',
+                'label' => trans('almosoft::base.Body_classes')
             ],
             [
                 'name' => 'func',

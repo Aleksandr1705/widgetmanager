@@ -25,5 +25,6 @@ return [
     'Widget_deleted_successfully'=>'Widget deleted successfully',
     'Widget_added_successfully'=>'Widget added successfully',
     'Static'=>'Static',
-    'Static_hint'=>'Content of the widget will not be loaded via ajax'
+    'Static_hint'=>'Content of the widget will not be loaded via ajax',
+    'Body_classes'=>'Additional CSS classes in box-body'
 ];

@@ -24,5 +24,6 @@ return [
     'Widget_deleted_successfully'=>'Виджет удален с рабочего стола',
     'Widget_added_successfully'=>'Виджет успешно добавлен на рабочий стол',
     'Static'=>'Статичный',
-    'Static_hint'=>'Содержимое виджета не будет загружено через ajax'
+    'Static_hint'=>'Содержимое виджета не будет загружено через ajax',
+    'Body_classes'=>'CSS классы в box-body'
 ];
