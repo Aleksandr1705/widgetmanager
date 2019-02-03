@@ -4,6 +4,7 @@ namespace almosoft\widgetmanager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
+use almosoft\widgetmanager\app\Http\Controllers\Admin\WidgetBaseController;
 
 class Widget extends Model {
 
@@ -19,10 +20,15 @@ class Widget extends Model {
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ['name', 'title', 'descr', 'img', 'func','nopadding'];
+    protected $fillable = ['name', 'title', 'descr', 'img', 'func', 'nopadding', 'wstatic'];
 
     // protected $hidden = [];
     // protected $dates = [];
+
+    /*
+     * Widget Footers, BodyFunction+Footer
+     */
+
 
     /*
       |--------------------------------------------------------------------------
@@ -57,16 +63,49 @@ class Widget extends Model {
 
     public function getViewAttribute() {
         $widget = $this;
-        return view('almosoft::widget.widget', compact('widget'));
+        if ($this->wstatic) {
+            return view('almosoft::widget.widget', compact('widget'));
+        } else {
+            return view('almosoft::widget.staticwidget', compact('widget'));
+        }
     }
 
-    public function getPaddingAttribute(){
-        if($this->nopadding){
+    public function getPaddingAttribute() {
+        if ($this->nopadding) {
             return 'no-padding';
-        }else{
+        } else {
             return '';
         }
     }
+    public function getBodyAttribute() {
+        $Method = $this->func;
+        $BodyController = \App::make('App\Http\Controllers\Admin\WidgetBodyController');
+        $bodyAll = "";
+        if (method_exists($BodyController, $Method)) {
+            $body = $BodyController->$Method($this);
+            if ($body) {
+                $bodyAll = $body;
+            } else {
+                $bodyAll = "";
+            }
+        }
+        return $bodyAll;
+    }
+    public function getFooterAttribute() {
+        $footerMethod = $this->func . "Footer";
+        $BodyController = \App::make('App\Http\Controllers\Admin\WidgetBodyController');
+        $footerAll = "";
+        if (method_exists($BodyController, $footerMethod)) {
+            $footer = $BodyController->$footerMethod($this);
+            if ($footer) {
+                $footerAll = "<div class='box-footer'>" . $footer . "</div>";
+            } else {
+                $footerAll = "";
+            }
+        }
+        return $footerAll;
+    }
+
     /*
       |--------------------------------------------------------------------------
       | MUTATORS

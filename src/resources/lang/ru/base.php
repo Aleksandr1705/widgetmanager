@@ -22,5 +22,7 @@ return [
     'Close'=>'Закрыть',
     'Add_to_widgetboard'=>'Добавить виджет на рабочий стол',
     'Widget_deleted_successfully'=>'Виджет удален с рабочего стола',
-    'Widget_added_successfully'=>'Виджет успешно добавлен на рабочий стол'
+    'Widget_added_successfully'=>'Виджет успешно добавлен на рабочий стол',
+    'Static'=>'Статичный',
+    'Static_hint'=>'Содержимое виджета не будет загружено через ajax'
 ];

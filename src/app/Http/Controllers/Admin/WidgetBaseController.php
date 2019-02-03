@@ -22,6 +22,8 @@ class WidgetBaseController extends Controller {
         return $body;
     }
 
+    
+    
     public function api(Request $request) {
         $action = $request->action;
         switch ($action) {

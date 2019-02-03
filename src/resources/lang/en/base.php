@@ -23,5 +23,7 @@ return [
     'Close'=>'Close',
     'Add_to_widgetboard'=>'Add to widgetboard',
     'Widget_deleted_successfully'=>'Widget deleted successfully',
-    'Widget_added_successfully'=>'Widget added successfully'
+    'Widget_added_successfully'=>'Widget added successfully',
+    'Static'=>'Static',
+    'Static_hint'=>'Content of the widget will not be loaded via ajax'
 ];

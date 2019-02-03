@@ -31,14 +31,19 @@ class widgetmanager {
         }
     }
 
-    public function getWidget($name){
-        $widget= Widget::where('name',$name)->first();
-        if($widget){
-            return view("almosoft::widget.widget",compact('widget'));
-        }else{
-            return "The widget with name $name is absent";
-        }
-    }
+//    public function getWidget($name){
+//        $widget= Widget::where('name',$name)->first();
+//        if($widget){
+//            if($widget->wstatic){
+//                return view("almosoft::widget.staticwidget",compact('widget'));
+//                
+//            }else{
+//                return view("almosoft::widget.widget",compact('widget'));
+//            }
+//        }else{
+//            return "The widget with name $name is absent";
+//        }
+//    }
     
     public function getWidgetMainPage(){
         return view("almosoft::widget.widgetmainpage");

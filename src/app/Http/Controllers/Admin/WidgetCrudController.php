@@ -52,6 +52,12 @@ class WidgetCrudController extends CrudController {
                 'type' => 'checkbox'
             ],
             [
+                'name' => 'wstatic',
+                'label' => trans('almosoft::base.Static'),
+                'type' => 'checkbox',
+                'hint'=>trans('almosoft::base.Static_hint')
+            ],
+            [
                 'name' => 'func',
                 'label' => trans('almosoft::base.Function_name'),
                 'hint' => trans('almosoft::base.Function_name_hint')
@@ -83,6 +89,11 @@ class WidgetCrudController extends CrudController {
             [
                 'name' => 'nopadding',
                 'label' => trans('almosoft::base.No_padding'),
+                'type' => 'check'
+            ],
+            [
+                'name' => 'wstatic',
+                'label' => trans('almosoft::base.Static'),
                 'type' => 'check'
             ],
             [

@@ -58,8 +58,13 @@ class WidgetboardWidget extends Pivot {
 
     public function getViewAttribute() {
         $widget = $this->widget;
-        $widgetboardwidget=$this;
-        return view('almosoft::widget.widget', compact('widget','widgetboardwidget'));
+        $widgetboardwidget = $this;
+        if ($widget->wstatic) {
+            return view('almosoft::widget.staticwidget', compact('widget', 'widgetboardwidget'));
+        } else {
+
+            return view('almosoft::widget.widget', compact('widget', 'widgetboardwidget'));
+        }
     }
 
     /*

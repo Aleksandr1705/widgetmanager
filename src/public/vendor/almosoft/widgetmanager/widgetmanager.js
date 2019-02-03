@@ -62,6 +62,7 @@ Widgetmanager.refreshWidgetboard = function () {
         success: function (response) {
             $("#widgetboard").html(response);
             $("[name='widget']").boxWidget();
+            $("[name='staticwidget']").boxWidget();
             $("[name='widget']").boxRefresh('load');
             Widgetmanager.reinit();
             Widgetmanager.savePosition();
@@ -77,6 +78,9 @@ Widgetmanager.refreshWidgetboard = function () {
 };
 Widgetmanager.reinit = function () {
     $("[name='widget']").on('removed.boxwidget', function (e) {
+        Widgetmanager.deleteWidgetFromWidgetboard($(e.target).data('pivot_id'));
+    });
+    $("[name='staticwidget']").on('removed.boxwidget', function (e) {
         Widgetmanager.deleteWidgetFromWidgetboard($(e.target).data('pivot_id'));
     });
     $('.connectedSortable').sortable({
