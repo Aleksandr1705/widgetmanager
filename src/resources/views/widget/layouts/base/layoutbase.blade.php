@@ -1,4 +1,5 @@
 @section('after_scripts')
+@parent
 <script src="{{ asset('vendor/adminlte/bower_components/jquery-ui') }}/jquery-ui.min.js"></script>
 <script src="{{ asset('vendor/almosoft') }}/widgetmanager/widgetmanager.js"></script>    
 @endsection
