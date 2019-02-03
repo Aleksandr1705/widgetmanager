@@ -24,7 +24,7 @@ class widgetmanager {
             if ($widgetlayout) {
                 return view("almosoft::widget.layouts." . $widgetlayout->fname, compact('widgetboard','widgetboardwidgets','widgets'));
             } else {
-                return '';
+                return 'The layout not selected for widgetboard';
             }
         } else {
             return "The dashboards with name $name is absent";
