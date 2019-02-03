@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Widgets</h4>
+                <h4 class="modal-title" id="myModalLabel">{{ trans('almosoft::base.Widgets') }}</h4>
             </div>
             <div class="modal-body">
                 @foreach($widgets as $widget)
@@ -24,14 +24,14 @@
                         {{ $widget->descr }}
                     </div>
                     <div class='media-footer pull-right'>
-                        <button type="button" class="btn btn-default btn-xs" onclick="Widgetmanager.addWidgetToWidgetboard({{$widgetboard->id}},{{$widget->id}})">Add to widgetboard</button>
+                        <button type="button" class="btn btn-default btn-xs" onclick="Widgetmanager.addWidgetToWidgetboard({{$widgetboard->id}},{{$widget->id}})">{{ trans('almosoft::base.Add_to_widgetboard') }}</button>
                     </div>
                 </div>
                 @endforeach
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">{{ trans('almosoft::base.Close') }}</button>
                 
             </div>
         </div>

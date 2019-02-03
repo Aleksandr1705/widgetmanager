@@ -19,5 +19,9 @@ return [
     'Widget'=>'Widget',
     'Column'=>'Column',
     'Position'=>'Position',
-    'Add_widget'=>'Add widget'
+    'Add_widget'=>'Add widget',
+    'Close'=>'Close',
+    'Add_to_widgetboard'=>'Add to widgetboard',
+    'Widget_deleted_successfully'=>'Widget deleted successfully',
+    'Widget_added_successfully'=>'Widget added successfully'
 ];
