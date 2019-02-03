@@ -8,5 +8,6 @@
             </button>
         </div>
     </div>
-    <div class = "box-body {{ $widget->padding }} {{ $widget->body_classes }}"></div>   
+    <div class = "box-body {{ $widget->padding }} {{ $widget->body_classes }}"></div>  
+    {!! $widget->footer !!}
 </div>
