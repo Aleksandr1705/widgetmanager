@@ -17,5 +17,6 @@ return [
     'Widgetboard'=>'Рабочий стол',
     'Widget'=>'Виджет',
     'Column'=>'Колонка',
-    'Position'=>'Позиция'
+    'Position'=>'Позиция',
+    'Add_widget'=>'Добавить виджет'
 ];

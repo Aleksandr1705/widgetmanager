@@ -18,5 +18,6 @@ return [
     'Widgetboard'=>'Widgetboard',
     'Widget'=>'Widget',
     'Column'=>'Column',
-    'Position'=>'Position'
+    'Position'=>'Position',
+    'Add_widget'=>'Add widget'
 ];

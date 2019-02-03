@@ -10,7 +10,7 @@
 <div class='row'>
     <div class='col-md-12'>
         <div class='pull-right' style='margin-bottom: 10px'>
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">Add widget</button>
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">{{ trans('almosoft::base.Add_widget') }}</button>
         </div>
     </div>
 </div>
