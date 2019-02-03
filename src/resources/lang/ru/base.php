@@ -4,7 +4,7 @@ return [
     'Widgetboard_Layout'=>'Разметка',
     'Widgetboard_Layouts'=>'Разметки',
     'Widgetboards'=>'Рабочие столы',
-    'Widgetboard-Widgets'=>'Рабочие столы-Виджеты',
+    'Widgetboard-widgets'=>'Рабочие столы-Виджеты',
     'Name'=>'Название',
     'Title'=>'Заголовок',
     'Description'=>'Описание',
