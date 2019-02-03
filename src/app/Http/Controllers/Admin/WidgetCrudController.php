@@ -100,8 +100,8 @@ class WidgetCrudController extends CrudController {
             ]
         ]);
         // add asterisk for fields that are required in WidgetRequest
-        $this->crud->setRequiredFields(StoreRequest::class, 'create');
-        $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
+        //$this->crud->setRequiredFields(StoreRequest::class, 'create');
+        //$this->crud->setRequiredFields(UpdateRequest::class, 'edit');
     }
 
     public function store(StoreRequest $request) {

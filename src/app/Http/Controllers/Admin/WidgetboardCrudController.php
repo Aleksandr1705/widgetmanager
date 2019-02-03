@@ -63,8 +63,8 @@ class WidgetboardCrudController extends CrudController
             ]
         ]);
         // add asterisk for fields that are required in WidgetboardRequest
-        $this->crud->setRequiredFields(StoreRequest::class, 'create');
-        $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
+        //$this->crud->setRequiredFields(StoreRequest::class, 'create');
+        //$this->crud->setRequiredFields(UpdateRequest::class, 'edit');
     }
 
     public function store(StoreRequest $request)
