@@ -94,6 +94,9 @@ php artisan storage:link
 ```
 
 * Add functions for widgets in WidgetBodyController, which returns body of widget;
+* Optionally add footer functions:
+Function name=BodyFunction+Footer
+ for static widgets in WidgetBodyController, which returns footer of widget;
 * Add widgets to widgetboard from main dashboard;
 
 ## Important
