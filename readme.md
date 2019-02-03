@@ -54,6 +54,11 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.views"
 ```
 
+* Update autoloader:
+``` bash
+composer dump-autoload
+```
+
 ## Usage
 
 Add widgetboard to dashboard view (resources/views/vendor/backpack/base/dashboard.blade.php)
