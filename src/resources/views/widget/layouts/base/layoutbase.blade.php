@@ -5,6 +5,7 @@
 @endsection
 <input type="hidden" id="widgetapiurl" value="{{ route('widgetapi') }}" />
 <input type="hidden" id="widgetmainpage" value="{{ route('widgetmainpage') }}" />
+@if(\Auth::User()->isAdmin())
 <div class='row'>
     <div class='col-md-12'>
         <div class='pull-right' style='margin-bottom: 10px'>
@@ -12,6 +13,7 @@
         </div>
     </div>
 </div>
+@endif
 @include('almosoft::widget.layouts.base.modals')
 
 @yield('almosoftwidgetboard')
