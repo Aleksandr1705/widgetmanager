@@ -64,7 +64,7 @@ class Install extends Command
         $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboards') }}</span></a></li>\"");
 
         $this->line(' Add menu Widgetboard-widgets');
-        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboard-Widgets') }}</span></a></li>\"");
+        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboard-widgets') }}</span></a></li>\"");
 
         
         $this->line(' Publishing WidgetBodyController');
@@ -80,7 +80,7 @@ class Install extends Command
         $this->executeProcess("php artisan vendor:publish --provider=\"Backpack\Base\BaseServiceProvider\" --tag=\"views\"");        
 
         $this->line(" Composer dump-autoupdate");
-        $this->executeProcess("composer dump-autoupdate");        
+        $this->executeProcess("composer dump-autoload");        
 
         $this->progressBar->finish();
         $this->info(" almosoft\widgetmanager installation finished.");
