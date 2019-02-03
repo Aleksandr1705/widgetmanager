@@ -43,7 +43,7 @@ class Install extends Command
      */
     public function handle()
     {
-        $this->progressBar = $this->output->createProgressBar(11);
+        $this->progressBar = $this->output->createProgressBar(12);
         $this->progressBar->start();
         $this->info(" almosoft\widgetmanager installation started. Please wait...");
         $this->progressBar->advance();
@@ -79,6 +79,9 @@ class Install extends Command
         $this->line(" Publishing backpack dashboard view");
         $this->executeProcess("php artisan vendor:publish --provider=\"Backpack\Base\BaseServiceProvider\" --tag=\"views\"");        
 
+        $this->line(" Composer dump-autoupdate");
+        $this->executeProcess("composer dump-autoupdate");        
+
         $this->progressBar->finish();
         $this->info(" almosoft\widgetmanager installation finished.");
     }
@@ -94,14 +97,14 @@ class Install extends Command
      */
     public function executeProcess($command, $beforeNotice = false, $afterNotice = false)
     {
-        $this->echo('info', $beforeNotice ? ' '.$beforeNotice : $command);
+        $this->echo_text('info', $beforeNotice ? ' '.$beforeNotice : $command);
 
         $process = new Process($command, null, null, null, $this->option('timeout'), null);
         $process->run(function ($type, $buffer) {
             if (Process::ERR === $type) {
-                $this->echo('comment', $buffer);
+                $this->echo_text('comment', $buffer);
             } else {
-                $this->echo('line', $buffer);
+                $this->echo_text('line', $buffer);
             }
         });
 
@@ -125,7 +128,7 @@ class Install extends Command
      * @param [string] $type    line, info, comment, question, error
      * @param [string] $content
      */
-    public function echo($type, $content)
+    public function echo_text($type, $content)
     {
         if ($this->option('debug') == false) {
             return;
