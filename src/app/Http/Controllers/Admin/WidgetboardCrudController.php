@@ -23,7 +23,7 @@ class WidgetboardCrudController extends CrudController
         */
         $this->crud->setModel('almosoft\widgetmanager\Models\Widgetboard');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/widgetboard');
-        $this->crud->setEntityNameStrings('widgetboard', 'widgetboards');
+        $this->crud->setEntityNameStrings(trans('almosoft::base.Widgetboard'), trans('almosoft::base.Widgetboards'));
 
         /*
         |--------------------------------------------------------------------------
@@ -37,11 +37,11 @@ class WidgetboardCrudController extends CrudController
         $this->crud->setColumns([
             [
                 'name'=>'name',
-                'label'=>'Name'
+                'label'=>trans('almosoft::base.Name')
             ],
             [
                 'name'=>'widgetlayout_id',
-                'label'=>'Layout',
+                'label'=>trans('almosoft::base.Layout'),
                 'type'=>'select',
                 'entity'=>'widgetlayout',
                 'attribute'=>'name',
@@ -51,11 +51,11 @@ class WidgetboardCrudController extends CrudController
         $this->crud->addFields([
             [
                 'name'=>'name',
-                'label'=>'Name'
+                'label'=>trans('almosoft::base.Name')
             ],
             [
                 'name'=>'widgetlayout_id',
-                'label'=>'Layout',
+                'label'=>trans('almosoft::base.Layout'),
                 'type'=>'select',
                 'entity'=>'widgetlayout',
                 'attribute'=>'name',

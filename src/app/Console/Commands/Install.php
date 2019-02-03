@@ -55,16 +55,16 @@ class Install extends Command
         $this->executeProcess('php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayoutsSeeder');
 
         $this->line(' Add menu Widgets');
-        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-square-o'></i> <span>Widgets</span></a></li>\"");
+        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgets') }}</span></a></li>\"");
 
         $this->line(' Add menu Widgetboard Layouts');
-        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetlayout') }}'><i class='fa fa-square-o'></i> <span>Widgetboard Layouts</span></a></li>\"");
+        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetlayout') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboard_Layouts') }}</span></a></li>\"");
 
         $this->line(' Add menu Widgetboards');
-        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-square-o'></i> <span>Widgetboards</span></a></li>\"");
+        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboards') }}</span></a></li>\"");
 
         $this->line(' Add menu Widgetboard-widgets');
-        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-square-o'></i> <span>Widgetboard-widgets</span></a></li>\"");
+        $this->executeProcess("php artisan backpack:base:add-sidebar-content \"<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboard-Widgets') }}</span></a></li>\"");
 
         
         $this->line(' Publishing WidgetBodyController');

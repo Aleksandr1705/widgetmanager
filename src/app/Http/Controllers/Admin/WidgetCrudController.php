@@ -22,7 +22,7 @@ class WidgetCrudController extends CrudController {
          */
         $this->crud->setModel('almosoft\widgetmanager\Models\Widget');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/widget');
-        $this->crud->setEntityNameStrings('widget', 'widgets');
+        $this->crud->setEntityNameStrings(trans('almosoft::base.Widget'), trans('almosoft::base.Widgets'));
 
         /*
           |--------------------------------------------------------------------------
@@ -35,30 +35,30 @@ class WidgetCrudController extends CrudController {
         $this->crud->addFields([
             [
                 'name' => 'name',
-                'label' => 'Name'
+                'label' => trans('almosoft::base.Name')
             ],
             [
                 'name' => 'title',
-                'label' => 'Title'
+                'label' => trans('almosoft::base.Title')
             ],
             [
                 'name' => 'descr',
-                'label' => 'Description',
+                'label' => trans('almosoft::base.Description'),
                 'required' => true
             ],
             [
-                'name'=>'nopadding',
-                'label'=>'No padding',
-                'type'=>'checkbox'
+                'name' => 'nopadding',
+                'label' => trans('almosoft::base.No_padding'),
+                'type' => 'checkbox'
             ],
             [
                 'name' => 'func',
-                'label' => 'Function name',
-                'hint' => 'Function name (without spaces) for widget function in WidgetBodyController'
+                'label' => trans('almosoft::base.Function_name'),
+                'hint' => trans('almosoft::base.Function_name_hint')
             ],
             [
                 'name' => 'img',
-                'label' => 'Image',
+                'label' => trans('almosoft::base.Image'),
                 'type' => 'image',
                 'upload' => true,
                 'crop' => true,
@@ -70,28 +70,28 @@ class WidgetCrudController extends CrudController {
         $this->crud->setColumns([
             [
                 'name' => 'name',
-                'label' => 'Name'
+                'label' => trans('almosoft::base.Name')
             ],
             [
                 'name' => 'title',
-                'label' => 'Title'
+                'label' => trans('almosoft::base.Title')
             ],
             [
                 'name' => 'descr',
-                'label' => 'Description'
+                'label' => trans('almosoft::base.Description'),
             ],
             [
-                'name'=>'nopadding',
-                'label'=>'No padding',
-                'type'=>'check'
+                'name' => 'nopadding',
+                'label' => trans('almosoft::base.No_padding'),
+                'type' => 'check'
             ],
             [
                 'name' => 'func',
-                'label' => 'Function name'
+                'label' =>  trans('almosoft::base.Function_name'),
             ],
             [
                 'name' => 'img',
-                'label' => 'Image',
+                'label' => trans('almosoft::base.Image'),
                 'type' => 'image',
                 'upload' => true,
                 'crop' => true,

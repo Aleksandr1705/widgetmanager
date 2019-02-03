@@ -28,10 +28,10 @@ php artisan db:seed --class=almosoft\widgetmanager\database\seeds\WidgetLayoutsS
 ```
 * Add menus to sidebar:
 ``` bash
-php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-square-o'></i> <span>Widgets</span></a></li>"
-php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetlayout') }}'><i class='fa fa-square-o'></i> <span>Widgetboard Layouts</span></a></li>"
-php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-square-o'></i> <span>Widgetboards</span></a></li>"
-php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-square-o'></i> <span>Widgetboard-widgets</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widget') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgets') }}</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetlayout') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboard_Layouts') }}</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboard') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboards') }}</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{ backpack_url('widgetboardwidget') }}'><i class='fa fa-square-o'></i> <span>{{ trans('almosoft::base.Widgetboard-Widgets') }}</span></a></li>"
 ```
 
 * Publish WidgetBodyController controller:
@@ -52,6 +52,11 @@ php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServi
 * Publish views (optionally):
 ``` bash
 php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.views"
+```
+
+* Publish languages (optionally):
+``` bash
+php artisan vendor:publish --provider="almosoft\widgetmanager\widgetmanagerServiceProvider" --tag="widgetmanager.langs"
 ```
 
 * Update autoloader:

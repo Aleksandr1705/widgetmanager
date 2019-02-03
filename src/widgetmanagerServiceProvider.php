@@ -16,7 +16,7 @@ class widgetmanagerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'almosoft');
+        $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'almosoft');
        
         $this->loadViewsFrom(__DIR__.'/resources/views', 'almosoft');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
@@ -89,9 +89,9 @@ class widgetmanagerServiceProvider extends ServiceProvider
         ], 'widgetmanager.views');*/
 
         // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/almosoft'),
-        ], 'widgetmanager.views');*/
+        $this->publishes([
+            __DIR__.'/resources/lang' => resource_path('lang/vendor/almosoft'),
+        ], 'widgetmanager.langs');
 
         // Registering package commands.
         // $this->commands([]);
