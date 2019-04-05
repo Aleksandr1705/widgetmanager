@@ -6,6 +6,8 @@ Route::group([
 ], function () { // custom admin routes
     
     Route::get('widgetbody/{widget}','WidgetBodyController@getBody');
+    Route::get('widgetbodysingle/{func}','WidgetBodyController@getBodySingle');
+    
     Route::get('widgetmainpage',function(){
         //return widgetmanager::getWidgetMainPage();
         return widgetmanager::GetWidgetBoard('system widgetboard');
