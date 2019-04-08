@@ -21,9 +21,9 @@ class WidgetBaseController extends Controller {
         }
         return $body;
     }
-    public function getBodySingle($func) {
+    public function getBodySingle(Request $request,$func) {
         if (method_exists($this, $func)) {
-            $body = $this->$func();
+            $body = $this->$func($request);
         } else {
             $body = "Method $func does not exists in WidgetBodyController";
         }
